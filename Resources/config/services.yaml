@@ -14,7 +14,7 @@ services:
 
     padam87_money.number_formatter:
         class: \NumberFormatter
-        factory:   'Padam87\MoneyBundle\Money\Formatter\NumberFormatterFactory:createNumberFormatter'
+        factory:   'Padam87\MoneyBundle\Money\Formatter\NumberFormatterFactory::createNumberFormatter'
         arguments: ['@request_stack', '%locale%']
 
     Money\Formatter\IntlMoneyFormatter:
